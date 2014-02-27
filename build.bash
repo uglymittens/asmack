@@ -66,6 +66,7 @@ testsmackgit() {
 
 fetchall() {
 	echo "## Step 15: fetching sources"
+	echo "Smack Repository > $SMACK_REPO"
 	if $SMACK_LOCAL ; then
 		# always clean the local copy first
 		rm -rf ${SRC_DIR}/smack
@@ -486,7 +487,7 @@ execute() {
 
 setdefaults() {
 	# Default configuration, can be changed with script arguments
-	SMACK_REPO=git://github.com/Flowdalic/smack.git
+	SMACK_REPO=git://github.com/uglymittens/smack.git
 	SMACK_BRANCH=master
 	SMACK_LOCAL=false
 	UPDATE_REMOTE=true
